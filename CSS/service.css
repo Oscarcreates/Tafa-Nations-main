@@ -1,0 +1,684 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+.hero-bg {
+  background-image: url(/Images/Group\ 87.png);
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.hero-bg--p {
+  width: 50%;
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+.service-hero--btn {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.price-tag--title {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.price-tag--container1 {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.price-tag--box1 {
+  padding: 10px 20px;
+  margin: 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-options-btn {
+  display: flex;
+  align-items: center;
+}
+
+.price-tag--box1-p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.pay-btn1 {
+  margin: 0 10px 0 0;
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.pay-btn3 {
+  margin: 0 0 0 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: #fdb022;
+}
+
+.price-tag--box1-h1 {
+  margin: 10px 0;
+}
+
+/* ------------------Book an Artist-------------- */
+
+.book-bg {
+  background-image: url(/Images/Group\ 88.png);
+  width: 100%;
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.book-bg h1 {
+  font-size: 30px;
+  color: white;
+}
+
+.book-bg--p {
+  width: 50%;
+  margin: 20px 0;
+  text-align: center;
+  color: white;
+}
+
+/* ---------------book artist-------------- */
+
+.artist-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.artist-category ul {
+  display: flex;
+  justify-content: center;
+}
+
+.artist-category li {
+  list-style: none;
+  padding: 0 20px;
+  transition: 300ms ease;
+}
+
+.artist-category li:hover {
+  text-decoration: underline 2px solid;
+  text-decoration-color: #fdb022;
+  cursor: pointer;
+}
+
+/* ----------------comedian category------------- */
+
+.comedian--container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.comedian--container1 {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.comedian--box1 {
+  padding: 10px 10px;
+  margin: 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-options-btn {
+  display: flex;
+}
+
+.comedian--box1-p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.pay-btn1 {
+  margin: 0 10px 0 0;
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+}
+
+/* ------------------------Dj category----------------- */
+
+.dj--container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.dj--container1 {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.dj--box1 {
+  padding: 10px 10px;
+  margin: 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-options-btn {
+  display: flex;
+}
+
+.dj--box1-p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.pay-btn1 {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+}
+
+/* ----------------music stars category---------------- */
+.tab-content {
+  display: none;
+}
+.music-stars--container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.music-stars--container1 {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.music-stars--box1 {
+  padding: 10px 10px;
+  margin: 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-options-btn {
+  display: flex;
+}
+
+.music-stars--box1-p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.pay-btn1 {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+}
+
+/* ----------------------hype------------------ */
+
+.hype-display {
+  display: none;
+}
+
+.hype--container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hype--container1 {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.hype--box1 {
+  padding: 10px 10px;
+  margin: 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-options-btn {
+  display: flex;
+}
+
+.hype--box1-p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.pay-btn1 {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+}
+
+/* -------------------------crew----------------------- */
+
+.crew-display {
+  display: none;
+}
+
+.crew--container {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.crew--container1 {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.crew--box1 {
+  padding: 10px 10px;
+  margin: 0 20px;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pay-options-btn {
+  display: flex;
+}
+
+.crew--box1-p {
+  font-size: 20px;
+  margin: 10px 0;
+  width: 60%;
+}
+
+.pay-btn1 {
+  margin: 10px 0 10px 0;
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+}
+
+/* js dependent styles */
+.active {
+  display: flex !important;
+}
+
+/* --------------contact-us-------------- */
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background: url("/images/vector.png") center/cover no-repeat;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.contact-left {
+  color: white;
+  max-width: 50%;
+  padding-right: 60px;
+}
+
+.contact-left h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.contact-left p {
+  font-size: 1rem;
+}
+
+.contact-form {
+  background: white;
+  margin: 100px 0 0 0;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+.contact-form h3 {
+  margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background: #fdbb2d;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.contact-form button:hover {
+  background: #e89e0f;
+}
+
+.calendly {
+  margin: 20px 0 0 0;
+}
+
+@media (max-width: 992px) {
+  .hero-bg h1 {
+    font-size: 40px;
+  }
+
+  .hero-bg--p {
+    width: 80%;
+  }
+
+  .price-tag--title {
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .price-tag--container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-class {
+    display: flex;
+    /* flex-direction: column; */
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: left;
+  }
+
+  .book-bg {
+    height: 50vh;
+  }
+
+  .book-bg--p {
+    width: 80%;
+  }
+
+  .comedian--box1,
+  .dj--box1,
+  .music-stars--box1,
+  .hype--box1,
+  .crew--box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comedian--container,
+  .dj--container1,
+  .music-stars--container1,
+  .hype--container1,
+  .crew--container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .comedian--box1,
+  .dj--box1,
+  .music-stars--box1,
+  .hype--box1,
+  .crew--box1 {
+    margin: 10px auto;
+  }
+
+  .contact-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contact-section {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    height: 100vh;
+  }
+
+  .contact-form h2 {
+    text-align: center;
+  }
+
+  .contact-form {
+    margin: 0;
+    padding: 15px 15px;
+  }
+}
+
+/* --------------------featured----------------- */
+
+.hero-bg_feature {
+  background-image: url(/Images/Vectorf.png);
+  width: 100%;
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-bg_feature h1 {
+  color: #ffff;
+}
+
+.feature-hero--btn {
+  padding: 10px 20px;
+  background-color: #fdb022;
+  border-radius: 10px;
+  color: #ffff;
+}
+
+/* -----------------feature-form------------- */
+
+#feature-form {
+  margin: 50px auto;
+  border: 1px solid;
+  width: 80%;
+  padding: 20px 0;
+  border-radius: 10px;
+}
+
+.feature-form__title {
+  display: flex;
+  justify-content: left;
+  margin-top: 30px;
+}
+
+.form-center {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.feature--form__inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.feature--form__input1 {
+  width: 100%;
+  margin: 20px 30px 0 0;
+}
+
+#fullname {
+  padding: 10px 10px 10px 5px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#email {
+  padding: 10px 10px 10px 5px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#about_applicant {
+  padding: 10px 10px 10px 5px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#phonenumber {
+  padding: 10px 10px 10px 5px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#address {
+  padding: 10px 10px 10px 5px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+#talent {
+  padding: 10px 10px 10px 5px;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+
+select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background: white
+    url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>")
+    no-repeat right 10px center;
+  background-size: 16px 16px;
+  cursor: pointer;
+}
+
+.upload-container {
+  border: 1px solid #000000;
+  border-style: dashed;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+
+  margin: 20px auto;
+  font-family: sans-serif;
+  color: #333;
+}
+
+.browse-btn {
+}
+
+.upload-container p {
+  margin: 5px;
+}
+.browse-btn:hover {
+  background-color: #ffa500;
+  color: white;
+}
+
+#fileinput {
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #ffa500;
+  color: #ffff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+}
+
+#submit-btn {
+  margin: 20px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: #ffa500;
+  color: #ffff;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+}
+
+@media (max-width: 992px) {
+  .feature--form__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+}

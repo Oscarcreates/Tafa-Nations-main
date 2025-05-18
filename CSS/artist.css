@@ -1,0 +1,44 @@
+/* -----------------artist----------------- */
+
+.swiper {
+  width: 600px;
+  height: 400px !important;
+}
+
+.artist--title {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-slide {
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  padding: 20px 0 0 20px;
+}
+
+.swiper-slide img {
+  width: 355px;
+  height: 269px;
+  /* margin: 0 20px; */
+}
+
+.swiper-wrapper {
+  /* justify-content: space-between; */
+  display: flex;
+  max-width: 100%;
+  /* margin: 50px 0; */
+  position: absolute;
+}
+
+.swiper {
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 992px) {
+  .swiper-slide {
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    padding: 10px 0 0 10px;
+  }
+}

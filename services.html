@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/service.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <title>TafaNations</title>
+  </head>
+  <body>
+    <section id="nav-bar">
+      <nav>
+        <ul class="side-bar">
+          <li class="closing">
+            <a href=""><i class="ph ph-x"></i></a>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="book.html">Book a Celebrity</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="" class="book-now__btn">Book Now</a></li>
+        </ul>
+
+        <ul>
+          <li><a href="" class="logo">TafaNation</a></li>
+          <li class="hideonMobile"><a href="/index.html">Home</a></li>
+          <li class="hideonMobile">
+            <a href="about.html">About</a>
+          </li>
+          <li class="hideonMobile"><a href="services.html">Services</a></li>
+          <li class="hideonMobile"><a href="book.html">Book a Celebrity</a></li>
+          <li class="hideonMobile"><a href="featured.html">Get Featured</a></li>
+          <li class="hideonMobile"><a href="contact.html">Contact</a></li>
+          <li class="hideonMobile">
+            <a href="" class="book-now__btn">Book Now</a>
+          </li>
+          <li class="hamburger menu-button">
+            <a href=""><i class="ph ph-list"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- ----------------Services hero------------- -->
+
+    <section id="hero-bg--container">
+      <div class="hero-bg">
+        <h1>Explore our Services</h1>
+        <p class="hero-bg--p">
+          Discover top-tier services tailored to your needs. Whether you’re
+          looking for fixed pricing or custom services, we’ve got you covered.
+          Book a session with us today and let’s bring your vision to life!
+        </p>
+        <div class="services--btn">
+          <div class="service-hero--btn">
+            <p>Schedule a Meet Now</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------what we do/price tag----------------- -->
+
+    <section>
+      <div class="price-tag--title">
+        <h1>Discover Our Range Of Creative Services</h1>
+      </div>
+
+      <div class="price-tag--container">
+        <div class="price-tag--container1">
+          <div class="price-tag--box1">
+            <img src="Images/young-people-using-reels.png" alt="" />
+            <p class="price-tag--box1-p">Social Media Management</p>
+            <h1 class="price-tag--box1-h1">N30,000 Per Month</h1>
+            <div class="pay-options-btn" onclick="payWithPaystack(750)">
+              <div class="pay-btn1">
+                <p>Pay Now</p>
+              </div>
+              <div class="pay-btn3">
+                <p>Book Meet</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-tag--box1">
+            <img src="Images/tafa 8.png" alt="" />
+            <p class="price-tag--box1-p">Modelling <br />Services</p>
+            <h1 class="price-tag--box1-h1">Custom</h1>
+            <div class="pay-options-btn">
+              <div class="pay-btn1">
+                <p>Pay Now</p>
+              </div>
+              <div class="pay-btn3" onclick="payWithPaystack(750)">
+                <p>Book Meet</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-tag--box1">
+            <img src="Images/set-up-studio-shoot.png" alt="" />
+            <p class="price-tag--box1-p">Shoot Equipment Provision</p>
+            <h1 class="price-tag--box1-h1">Custom</h1>
+            <div class="pay-options-btn">
+              <div class="pay-btn1" onclick="payWithPaystack(750)">
+                <p>Pay Now</p>
+              </div>
+              <div class="pay-btn3">
+                <p>Book Meet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-tag--container1">
+          <div class="price-tag--box1">
+            <img src="Images/tafa 19.png" alt="" />
+            <p class="price-tag--box1-p">Artist Promotion</p>
+            <h1 class="price-tag--box1-h1">Custom</h1>
+            <div class="pay-options-btn">
+              <div class="pay-btn1" onclick="payWithPaystack(750)">
+                <p>Pay Now</p>
+              </div>
+              <div class="pay-btn3">
+                <p>Book Meet</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-tag--box1">
+            <img src="Images/tafa 16.png" alt="" />
+            <p class="price-tag--box1-p">Film Making.</p>
+            <h1 class="price-tag--box1-h1">Custom</h1>
+            <div class="pay-options-btn">
+              <div class="pay-btn1" onclick="payWithPaystack(750)">
+                <p>Pay Now</p>
+              </div>
+              <div class="pay-btn3">
+                <p>Book Meet</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="price-tag--box1">
+            <img
+              src="Images/medium-shot-man-engineer-controlling-drone.png"
+              alt=""
+            />
+            <p class="price-tag--box1-p">Drone Piloting</p>
+            <h1 class="price-tag--box1-h1">N30,000/hr</h1>
+            <div class="pay-options-btn">
+              <!-- <div class="pay-btn1">
+                <p>Pay Now</p>
+              </div> -->
+              <div class="pay-btn3">
+                <p>Book Meet</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------footer---------------- -->
+    <section>
+      <div class="footer">
+        <div class="footer__container">
+          <div class="footer__content1">
+            <h1 class="footer-logo">
+              TAFA <br />
+              NATION
+            </h1>
+            <div class="schedule--call">
+              <p>Schedule a Call With Us</p>
+            </div>
+            <div class="send--mail">
+              <p>Send a Direct Mail</p>
+            </div>
+          </div>
+
+          <div class="footer__content1 hideonMobile2">
+            <h1 class="quick__title">Quick Links</h1>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Book a Celebrity</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="footer__content1 hideonMobile2">
+            <h1 class="quick__title">More Info</h1>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Legal</li>
+          </div>
+        </div>
+
+        <div class="footer-class menu-button">
+          <div class="footer__content1 menu-button">
+            <h1 class="quick__title">Quick Links</h1>
+            <ul>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Book a Celebrity</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div class="footer__content1 menu-button">
+            <h1 class="quick__title">More Info</h1>
+            <li>Terms</li>
+            <li>Privacy</li>
+            <li>Legal</li>
+          </div>
+        </div>
+
+        <div class="rectangle"></div>
+
+        <div class="footer__last">
+          <div class="footer__text">
+            <p>TAFANATION 2025. ALL RIGHTS RESERVED</p>
+          </div>
+          <div class="footer__social">
+            <img src="Images/Group.png" alt="" />
+            <img src="Images/Vector (7).png" alt="" />
+            <img src="Images/instagram.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/Javascript/script.js"></script>
+    <script src="/Javascript/payment.js"></script>
+
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <!-- Calendly Script -->
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      async
+    ></script>
+
+    <script>
+      function payWithPaystack(amount = 5000) {
+        let handler = PaystackPop.setup({
+          key: "pk_test_411698493f896d4eefa4be2685f252daddd199bf", // Replace with your Paystack Public Key
+          email: "customer@example.com", // Customer's email
+          amount: amount * 100, // Amount in kobo (e.g., ₦50.00 = 5000 kobo)
+          currency: "NGN", // Currency (NGN, USD, etc.)
+          ref: "TXN_" + Math.floor(Math.random() * 1000000000 + 1), // Unique reference number
+          callback: function (response) {
+            // Open Calendly in a modal
+            document.getElementById("calendlyModal").style.display = "flex";
+          },
+          onClose: function () {
+            document.getElementById("calendlyModal").style.display = "none";
+            alert("Transaction was not completed.");
+          },
+        });
+
+        handler.openIframe();
+      }
+    </script>
+  </body>
+</html>

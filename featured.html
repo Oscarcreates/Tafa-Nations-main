@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/CSS/style.css" />
+    <link rel="stylesheet" type="text/css" href="/CSS/service.css" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>Get Featured</title>
+  </head>
+  <body>
+    <section id="nav-bar">
+      <nav>
+        <!-- Navigation here (unchanged for brevity) -->
+      </nav>
+    </section>
+
+    <section id="hero-bg--container">
+      <div class="hero-bg_feature">
+        <h1>Become a Featured Talent</h1>
+        <p class="hero-bg--p">
+          Showcase your skills to our audience! Submit your credentials and
+          portfolio below for consideration. If approved, you’ll be notified via
+          email.
+        </p>
+        <div class="services--btn">
+          <div class="feature-hero--btn">
+            <p>Apply to become a Talent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <form id="feature-form">
+        <div class="form-center">
+          <div class="feature-form__title">
+            <h1>Step 1: Personal Information</h1>
+          </div>
+          <div class="feature--form__inputs">
+            <div class="feature--form__input1">
+              <p>Full Name</p>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Full Name"
+              />
+            </div>
+
+            <div class="feature--form__input1">
+              <p>Email</p>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="olivia@gmail.com"
+              />
+            </div>
+          </div>
+
+          <div class="feature--form__inputs">
+            <div class="feature--form__input1">
+              <p>Phone Number</p>
+              <input
+                type="tel"
+                name="phonenumber"
+                id="phonenumber"
+                placeholder="Phone Number"
+              />
+            </div>
+
+            <div class="feature--form__input1">
+              <p>Address</p>
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="123 Street, City"
+              />
+            </div>
+          </div>
+
+          <div class="feature-form__title">
+            <h1>Step 2: Professional Information</h1>
+          </div>
+          <div class="feature--form__inputs">
+            <div class="feature--form__input1">
+              <p>Talent Category</p>
+              <select name="talent" id="talent">
+                <option value="">--Select--</option>
+                <option value="Hypeman">Hypeman</option>
+                <option value="DJ">DJ</option>
+                <option value="MC">MC</option>
+                <option value="Performer">Performer</option>
+                <option value="Host">Host</option>
+              </select>
+            </div>
+
+            <div class="feature--form__input1">
+              <p>Write a short note of your skill</p>
+              <input
+                type="text"
+                name="about_applicant"
+                id="about_applicant"
+                placeholder="Write Here"
+              />
+            </div>
+          </div>
+
+          <div class="feature-form__title">
+            <h1>Step 3: Portfolio</h1>
+          </div>
+          <div class="upload-container" id="uploadContainer">
+            <p>Drag and drop to upload your work portfolio</p>
+            <p>Or</p>
+            <button class="browse-btn" id="browseBtn" style="display: none">
+              Browse File
+            </button>
+            <input type="file" name="portfolio" id="fileinput" />
+            <input
+              type="hidden"
+              name="portfolio"
+              value="https://drive.google.com/drive/folders/1nqmW8MTeMAwSWbb7Cx1htGTX_o1iC9bE"
+            />
+          </div>
+
+          <div class="terms">
+            <label>
+              <input type="checkbox" name="terms_agreed" value="yes" />
+              By clicking the submit button, you agree to Terms and conditions
+            </label>
+          </div>
+
+          <button id="submit-btn" type="submit"><p>Submit</p></button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Footer (unchanged) -->
+    <section>
+      <div class="footer">
+        <!-- Footer content -->
+      </div>
+    </section>
+
+    <!-- EmailJS script -->
+    <script>
+      (function () {
+        emailjs.init("TKXCjE4l9JyeQwwCe");
+      })();
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("feature-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          emailjs.sendForm("service_0uz0luv", "template_2ce95yx", this).then(
+            function () {
+              alert("Email Sent Successfully!");
+              form.reset(); // Optional: reset form on success
+            },
+            function (error) {
+              alert("Failed: " + JSON.stringify(error));
+            }
+          );
+        });
+      });
+    </script>
+    <script src="/Javascript/script.js"></script>
+  </body>
+</html>
