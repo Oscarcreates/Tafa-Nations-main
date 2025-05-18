@@ -1,6 +1,6 @@
 
 
-function payWithPaystack(amount = 5000) {
+function payWithPaystack(amount = 500) {
     let handler = PaystackPop.setup({
         key: 'pk_test_411698493f896d4eefa4be2685f252daddd199bf', // Replace with your Paystack Public Key
         email: 'customer@example.com', // Customer's email
